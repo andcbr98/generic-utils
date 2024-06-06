@@ -7,7 +7,7 @@ Questo repository raccoglie una serie di comandi utili per vari sistemi operativ
 - [Windows](#windows)
 - [Linux](#linux)
 - [MacOS](#macos)
-- [Altri Sistemi](#altri-sistemi)
+- [Multi](#multi)
 
 ## Windows
 
@@ -31,11 +31,18 @@ find . -name "file.txt" -exec grep -H "string" {} \;
 
 ## MacOS
 
+### 1. Gestire gli hostname
+```bash
+sudo scutil --set ComputerName "system"
+sudo scutil --set HostName "system"
+sudo scutil --set LocalHostName "system"
+```
 
-## Altri Sistemi
+## Multi
 
 ```cmd
 terraform apply -refresh-only
 terraform force-unlock 1db462f1-b2be-c5f4-2238-8604f079hdcg
+openssl s_client -connect server_hostname:port -tls1_2
 ```
 
