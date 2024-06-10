@@ -41,8 +41,9 @@ sudo scutil --set LocalHostName "system"
 ## Multi
 
 ```cmd
-terraform apply -refresh-only
-terraform force-unlock 1db462f1-b2be-c5f4-2238-8604f079hdcg
-openssl s_client -connect server_hostname:port -tls1_2
+terraform apply -refresh-only    # Aggiornare lo state
+terraform force-unlock 1db462f1-b2be-c5f4-2238-8604f079hdcg    # Fare Unlock di uno stato
+openssl s_client -connect server_hostname:port -tls1_2    # Check connettività TLS
+az ad sp create-for-rbac --name terraform --role Contributor --scopes /subscriptions/<subscription_id>    # Crea un Service Principal
 ```
 
