@@ -21,6 +21,12 @@ echo $env:USERPROFILE
 schtasks /create /sc minute /mo 5 /tn "RunPowerShellScript" /tr "powershell.exe -File %USERPROFILE%\scripts\your_script.ps1" /f
 ```
 
+### 2. Controllare lo stato di una porta
+```cmd
+netstat -ano | wsl grep "80"
+```
+
+
 ## Linux
 
 ### 1. Cercare una stringa in diverse cartelle
