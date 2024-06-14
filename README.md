@@ -40,3 +40,7 @@ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh
 sudo usermod -aG docker $USER
+
+## Git
+
+git config credential.helper store
