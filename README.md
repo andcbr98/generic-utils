@@ -9,6 +9,7 @@ netstat -ano | wsl grep "80"
 ## Linux
 
 find . -name "file.txt" -exec grep -H "string" {} \;
+strace -p <pid>
 
 ## MacOS
 
