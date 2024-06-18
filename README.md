@@ -9,7 +9,9 @@ netstat -ano | wsl grep "80"
 ## Linux
 
 find . -name "file.txt" -exec grep -H "string" {} \;  
-strace -p <pid>
+strace -p <pid> 
+rsync -avz -e ssh /source/directory user@remote_host:/destination/directory
+
 
 ## MacOS
 
