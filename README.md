@@ -12,6 +12,12 @@ find . -name "file.txt" -exec grep -H "string" {} \;
 strace -p <pid>   
 rsync -avz -e ssh /source/directory user@remote_host:/destination/directory
 
+### Arch
+
+sudo pacman -Sy archlinux-keyring
+sudo pacman-key --init
+sudo pacman-key --populate archlinux
+sudo pacman-key --list-keys
 
 ## MacOS
 
