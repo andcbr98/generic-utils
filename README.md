@@ -1,6 +1,6 @@
 ## Windows
 
-```sh
+```powershell
 echo $env:USERPROFILE
 
 schtasks /create /sc minute /mo 5 /tn "RunPowerShellScript" /tr "powershell.exe -File %USERPROFILE%\scripts\your_script.ps1" /f
