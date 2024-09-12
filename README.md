@@ -44,6 +44,8 @@ sudo scutil --set LocalHostName "system"
 ```sh
 terraform apply -refresh-only
 
+terraform fmt -recursive
+
 terraform force-unlock 1db462f1-b2be-c5f4-2238-8604f079hdcg   
 
 az ad sp create-for-rbac --name terraform --role Contributor --scopes /subscriptions/<subscription_id>  
