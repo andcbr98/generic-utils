@@ -8,7 +8,7 @@ schtasks /create /sc minute /mo 5 /tn "RunPowerShellScript" /tr "powershell.exe 
 netstat -ano | wsl grep "80"
 ```
 
-## Linux
+## Linux (All distros)
 
 ```sh
 find . -name "file.txt" -exec grep -H "string" {} \;  
